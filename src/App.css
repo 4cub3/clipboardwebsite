@@ -21,6 +21,12 @@ html {
 .section-content{
 @apply max-w-6xl mx-auto  }
 body {
-  @apply font-sans bg-[url('./store/images/bg-header-mobile.png')] md:bg-[url('./store/images/bg-header-desktop.png')] bg-no-repeat bg-cover text-[1.6rem];
+  @apply font-sans bg-[url('./store/images/bg-header-desktop.png')]   bg-no-repeat bg-contain text-[1.6rem];
+
 }
 
+  @media screen and (max-width: 570px){
+  body{
+  @apply  bg-[url('./store/images/bg-header-mobile.png')];
+  }
+  }
